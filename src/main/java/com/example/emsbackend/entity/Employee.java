@@ -14,7 +14,7 @@ import lombok.Setter;
 @Table(name="employees") //nombre que queremos para la tabla
 public class Employee {
     @Id //campo obligatorio
-    @GeneratedValue(strategy = GenerationType.AUTO) //se genera de forma automatica y se autoinvrementa
+    @GeneratedValue(strategy = GenerationType.IDENTITY) //se genera de forma automatica y se autoinvrementa
     private Long id;
     @Column(name="first_name") //se pone con guion bajo
     private String firstName;
